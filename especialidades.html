@@ -16,7 +16,14 @@
             accent: { DEFAULT: '#E85D04', hover: '#DC2F02', light: '#FFF0E6' },
             secondary: { DEFAULT: '#0077B6', light: '#E0FBFC' }
           },
-          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          keyframes: {
+            fadeInUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } }
+          },
+          animation: {
+            fadeInUp: 'fadeInUp 0.8s ease-out forwards',
+            fadeInUpDelay: 'fadeInUp 0.8s ease-out 0.3s forwards',
+          }
         }
       }
     }
@@ -32,6 +39,7 @@
 
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen overflow-x-hidden">
 
+  <!-- TOPBAR -->
   <div class="hidden md:flex justify-center gap-8 bg-white text-gray-500 text-xs py-2 border-b border-gray-200">
     <a href="tel:652531038" class="flex items-center gap-2 hover:text-primary transition-colors">📞 65 2 531038</a>
     <a href="https://wa.me/56993155447" class="flex items-center gap-2 hover:text-primary transition-colors">💬 +56 9
@@ -39,6 +47,7 @@
     <span class="flex items-center gap-2">📍 Luis Espinoza #348, Castro</span>
   </div>
 
+  <!-- HEADER -->
   <header class="sticky top-0 z-50 bg-white shadow-sm transition-all duration-300" id="siteHeader">
     <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
       <a href="index.html" class="flex items-center gap-3 group">
@@ -80,14 +89,21 @@
   </header>
 
   <main class="flex-1">
-    <section class="bg-primary text-white py-16 md:py-24 text-center px-6">
-      <div class="max-w-2xl mx-auto">
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Nivelación de Estudios 2x1</h1>
-        <p class="text-lg text-gray-300">Dos niveles diseñados especialmente para jóvenes y adultos que buscan completar
-          su enseñanza media oficial.</p>
+    <!-- HERO SECTION CON IMAGEN REAL MEJORADA -->
+    <section
+      class="relative text-white py-24 md:py-32 overflow-hidden flex items-center justify-center bg-cover bg-center bg-no-repeat transition-all duration-500"
+      style="background-image: url('assets/img/fondo-2x1.jpg');">
+      <!-- Capa oscura de contraste -->
+      <div class="absolute inset-0 bg-[#071A30]/85"></div>
+
+      <div class="max-w-2xl mx-auto px-6 text-center relative z-10 opacity-0 animate-fadeInUp">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-md">Nivelación de Estudios 2x1</h1>
+        <p class="text-lg text-gray-200 drop-shadow-sm">Dos niveles diseñados especialmente para jóvenes y adultos que
+          buscan completar su enseñanza media oficial.</p>
       </div>
     </section>
 
+    <!-- DETALLE DE NIVELES -->
     <section class="py-20 px-6 bg-gray-50">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
