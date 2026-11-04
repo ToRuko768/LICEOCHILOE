@@ -1,8 +1,3 @@
-/**
- * MAIN.JS - Adaptado para Tailwind CSS
- * Control de Navegación Móvil y Header Interactivo
- */
-
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initStickyHeader();

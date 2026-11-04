@@ -1,12 +1,3 @@
-/**
- * ==========================================================================
- * DATA.JS - LICEO TÉCNICO PROFESIONAL CHILOÉ
- * Modalidad Educación de Personas Jóvenes y Adultas (2x1)
- * 1° Nivel Medio (1° y 2° Medio) | 2° Nivel Medio (3° y 4° Medio)
- * Especialidad: Técnico de Nivel Medio en Atención de Párvulos
- * ==========================================================================
- */
-
 const LICEO_DATA = {
   // Información General
   info: {
@@ -39,10 +30,10 @@ const LICEO_DATA = {
         "Certificado de nacimiento para matrícula."
       ],
       malla: [
-        "Lengua Castellana y Comunicación Instrumental",
-        "Educación Matemática para el Contexto Cotidiano",
-        "Ciencias Naturales y Salud Integral",
-        "Estudios Sociales e Historia de Chile y Chiloé",
+        "Lenguaje y Comunicación",
+        "Matemáticas",
+        "Ciencias Naturales",
+        "Estudios Sociales e Historia de Chile",
         "Idioma Extranjero: Inglés Comunicativo",
         "Taller de Desarrollo Personal y Orientación Vocacional"
       ]

@@ -1,8 +1,3 @@
-/**
- * INTERACTIONS.JS - Adaptado para Tailwind CSS
- * Acordeones, Filtros de Noticias y Validación de Formulario
- */
-
 document.addEventListener('DOMContentLoaded', () => {
   initAccordions();
   initNewsFilter();
